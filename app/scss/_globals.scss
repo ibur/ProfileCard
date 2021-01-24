@@ -4,6 +4,7 @@ html {
 
   font-family: "Kumbh Sans", sans-serif;
   font-size: 18px;
+  height: 100%;
 }
 
 *,
@@ -15,15 +16,25 @@ html {
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: $color2;
-  background-attachment: fixed;
+
   background-image: $body-bg-image1, $body-bg-image2;
   background-repeat: no-repeat;
-  background-position: -31% 275%, 120% -215%;
-  background-size: 61%;
+  @media (max-width: 767px) {
+    background-position: -710px -600px, 210px 300px;
+  }
+  @media (min-width: 768px) {
+    background-position: -275px -500px, 675px 378px;
+  }
+
+  // background-size: 61%;
+
+  // background-image: $bg_small;
+  // background-repeat: no-repeat;
   height: 100%;
 }
 
