@@ -30,19 +30,8 @@ body {
   background-color: #19a2ae;
   background-image: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg");
   background-repeat: no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
   height: 100%;
-}
-
-@media (max-width: 767px) {
-  body {
-    background-position: -710px -600px, 210px 300px;
-  }
-}
-
-@media (min-width: 768px) {
-  body {
-    background-position: -275px -500px, 675px 378px;
-  }
 }
 
 footer {
