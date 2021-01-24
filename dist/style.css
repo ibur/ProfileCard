@@ -85,6 +85,7 @@ footer {
 
 .pcard-body {
   text-align: -webkit-center;
+  text-align: center;
   height: 145px;
   background-color: white;
 }
